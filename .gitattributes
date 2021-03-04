@@ -1,0 +1,14 @@
+* text eol=lf
+
+*.js text
+*.html text
+*.css text
+*.json text
+*.sass text
+*.purs text
+*.dhall text
+*.nix text
+
+*.png binary
+*.jpg binary
+*.ico binary

@@ -1,0 +1,1 @@
+require('./.dce-output/MTGMine.Renderer').render()
