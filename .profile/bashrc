@@ -1,0 +1,9 @@
+#!/bin/bash
+export PATH=/c/Users/koto/workspace/mtgmine/.profile/bin:$PATH
+export WORKDIR=`pwd`
+
+# Command alias
+alias ll='ls -l'
+alias gst='git status'
+alias gl='git pull'
+alias gco='git checkout'

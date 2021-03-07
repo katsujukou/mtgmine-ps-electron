@@ -2,6 +2,8 @@
 
 const { app, BrowserWindow } = require('electron')
 
+const isProduction = process.env.NODE_ENV === "production"
+
 function createWindow () {
   const win = new BrowserWindow({
     width: 800,
@@ -10,8 +12,14 @@ function createWindow () {
       nodeIntegration: true
     }
   })
-
-  win.loadFile('./.dist/index.html')
+  
+  if (isProduction) {
+    win.loadURL(`file://${__dirname}/build/.dist/index.html`)
+  }
+  else {
+    win.loadURL(`http://localhost:${process.env.WDS_PORT}/index.html`)
+    win.webContents.openDevTools()
+  } 
 }
 
 app.whenReady().then(createWindow)

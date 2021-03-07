@@ -1,5 +1,11 @@
 {
-    "terminal.integrated.allowMnemonics": true,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "terminal.integrated.shellArgs.windows": ["--rcfile", "./.profile/bashrc"]
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  "terminal.integrated.allowMnemonics": true,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shellArgs.windows": ["--rcfile", "./.profile/bashrc"],
+
+  "purescript.packagePath": ".spago",
+  "purescript.outputDirectory": "build/.ps-modules"
 }

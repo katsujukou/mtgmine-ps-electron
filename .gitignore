@@ -11,7 +11,7 @@
 /build/.ps-modules/
 /build/.dce-output/
 /build/.dist/
-/.profile
+/.profile/bin
 /dist/
 **/.DS_Store
 **/*.swp
